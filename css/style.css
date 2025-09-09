@@ -1,0 +1,154 @@
+.main-header
+{
+    background-color: aqua;
+    text-align: center;
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width:100%;
+    box-sizing: border-box;
+    color: aqua;    
+}
+.main-header.sree
+{
+    width: 55px;
+    height: 55px;
+    padding: 8px 14px;
+    margin: 10 px 0;
+
+}
+.main-header.logo img
+{
+ border-radius: 5px;
+}
+.main-header.tittle 
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: blue;
+}
+h1
+{
+    color: antiquewhite;
+}
+.bgimage
+{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.maincomponent
+{
+    display: flex;
+    border:2px solid black;
+}
+.box
+{
+    width: 250px;
+    height:150px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2em;
+    transition: width 2s,heigth 2s,transform 3s;
+}
+#box1
+{
+    background-color: blueviolet;
+    transition-timing-function: linear;
+}
+#box1:hover
+{
+    background-color:lightcoral;
+    width:400px;
+}
+#box2
+{
+    background-color: brown;
+    transition-timing-function: ease-out;
+}
+#box2:hover
+{
+    background-color: darkorange;
+    width: 500px;
+}
+#box3
+{
+    background-color:lightcoral;
+    transition-timing-function: ease-in-out;
+}
+#box3:hover
+{
+    background-color: darkslateblue;
+    width: 500px;
+}
+#box4
+{
+    background-color: bisque;
+    transition-timing-function: ease-in;
+}
+#box4:hover
+{
+    background-color: indigo;
+    width: 500px;
+}
+.newrotate{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: brown;
+    transition: width 2s, height 2s,transform 2s;
+}
+#newrotate:hover
+{
+    width: 250px;
+    height: 20px;
+    transform: rotate(360deg);
+}
+
+@keyframes animid{
+    from{background-color: maroon;}
+    to{background-color: aqua;}
+}
+.animi
+{
+    width:160px;
+    height: 160px;
+    animation-name: animid;
+    animation-duration:6s;
+}
+
+
+.scrolltext
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:oblique;
+    font-size: 25px;
+    width: 100%;
+    white-space: nowrap;
+    color: indianred;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+@keyframes scrollright{
+    from{transform:translatex(-100%);}
+    to{transform: translatex(100%);}
+}
+.scrolltext span{
+    display: inline-block;
+    padding-right: 100px;
+    animation: scrollright 7s linear infinite;
+}
+
+
+
+
+
+
+
+
+
